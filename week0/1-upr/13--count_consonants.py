@@ -9,7 +9,8 @@ def count_consonants(str):
     return counter
 
 count_consonants("Python")
-count_consonants("Theistareykjarbunga") #It's a volcano name!
+count_consonants("Theistareykjarbunga")
 count_consonants("grrrrgh!")
-count_consonants("Github is the second best thing that happend to programmers, after the keyboard!")
+count_consonants(
+    "Github is the second best thing that happend to programmers, after the keyboard!")
 count_consonants("A nice day to code!")

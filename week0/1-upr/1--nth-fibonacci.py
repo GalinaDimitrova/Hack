@@ -6,7 +6,7 @@ def nth_fibonacci(n):
         print(1)
         return first
     else:
-        for i in range(2,n):
+        for i in range(2, n):
             num = first + second
             first = second
             second = num
@@ -17,5 +17,3 @@ nth_fibonacci(1)
 nth_fibonacci(2)
 nth_fibonacci(3)
 nth_fibonacci(10)
-
-

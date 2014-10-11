@@ -46,7 +46,6 @@ def matrix_bombing_plan(m):
                 new_matrix[i - 1][j - 1] = m[i - 1][j - 1] - m[i][j]
             new_dict[(i, j)] = sum_matrix(new_matrix)
             new_matrix = [row[:] for row in m]
-    # Sort the dictionary ????
     print(new_dict)
     return new_dict
 

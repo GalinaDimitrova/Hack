@@ -9,8 +9,6 @@ def contains_digit(number, digit):
     else:
         print(False)
         return False
-            
-
 
 
 contains_digit(123, 4)

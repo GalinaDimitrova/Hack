@@ -1,11 +1,11 @@
 def nan_expand(times):
     result = ["NaN"]
     if times == 0:
-        print(" ")
-        return " "
+        print("")
+        return ""
     else:
         for i in range(times):
-            result.insert(0,"Not a ")
+            result.insert(0, "Not a ")
         print("".join(result))
         return "".join(result)
 
