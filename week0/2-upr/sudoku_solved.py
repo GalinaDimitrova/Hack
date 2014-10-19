@@ -38,39 +38,10 @@ def sudoku_solved(sudoku):
     for i in range(len(sudoku[0])):
         transposed.append([row[i] for row in sudoku])
     if check_row(sudoku) == False:
-        print(False)
         return False
     elif check_row(transposed) == False:
-        print(False)
         return False
     elif check_square(sudoku) == False:
-        print(False)
         return False
     else:
-        print(True)
         return True
-
-
-sudoku_solved([
-    [4, 5, 2, 3, 8, 9, 7, 1, 6],
-    [3, 8, 7, 4, 6, 1, 2, 9, 5],
-    [6, 1, 9, 2, 5, 7, 3, 4, 8],
-    [9, 3, 5, 1, 2, 6, 8, 7, 4],
-    [7, 6, 4, 9, 3, 8, 5, 2, 1],
-    [1, 2, 8, 5, 7, 4, 6, 3, 9],
-    [5, 7, 1, 8, 9, 2, 4, 6, 3],
-    [8, 9, 6, 7, 4, 3, 1, 5, 2],
-    [2, 4, 3, 6, 1, 5, 9, 8, 7]
-])
-
-sudoku_solved([
-    [1, 2, 3, 4, 5, 6, 7, 8, 9],
-    [1, 2, 3, 4, 5, 6, 7, 8, 9],
-    [1, 2, 3, 4, 5, 6, 7, 8, 9],
-    [1, 2, 3, 4, 5, 6, 7, 8, 9],
-    [1, 2, 3, 4, 5, 6, 7, 8, 9],
-    [1, 2, 3, 4, 5, 6, 7, 8, 9],
-    [1, 2, 3, 4, 5, 6, 7, 8, 9],
-    [1, 2, 3, 4, 5, 6, 7, 8, 9],
-    [1, 2, 3, 4, 5, 6, 7, 8, 9]
-])

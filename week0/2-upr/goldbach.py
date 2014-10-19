@@ -24,11 +24,6 @@ def goldbach(n):
         for (x, y) in result:
             if x != y:
                 result.remove((y, x))
-    print(result)
     return result
 
-goldbach(4)
-goldbach(6)
-goldbach(8)
-goldbach(10)
-goldbach(100)
+
