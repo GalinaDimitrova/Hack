@@ -1,0 +1,1 @@
+{"name": "myList", "songs": [{"rating": 4.0, "artist": "Sting", "count_raters": 0, "title": "Desert rose", "bitrate": 8, "length": "4:45", "album": "Brand New Day"}, {"rating": 4.0, "artist": "Sting", "count_raters": 0, "title": "Desert rose", "bitrate": 8, "length": "4:45", "album": "Brand New Day"}]}
