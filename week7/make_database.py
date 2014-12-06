@@ -3,6 +3,7 @@ from sqlalchemy import Column, Integer, String, Float, DATETIME, Boolean
 from sqlalchemy import create_engine
 from sqlalchemy import ForeignKey
 from sqlalchemy.orm import relationship
+from sqlalchemy.orm import Session
 
 
 Base = declarative_base()
@@ -30,3 +31,4 @@ class Page(Base):
 engine = create_engine("sqlite:///search-engine.db")
 # will create all tables
 Base.metadata.create_all(engine)
+session = Session(bind=engine)
