@@ -1,0 +1,22 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>Your result!</title>
+    </head>
+
+    <body>
+
+        <h1>Your result!</h1>
+
+        <ul>
+            {% for page  in pages %}
+                <li><a href="{{ page.url }}"> {{ page.title }}
+                </a></li>
+                <p> {{page.description}}</p>
+            {% endfor %}
+        </ul>
+
+    </body>
+
+</html>

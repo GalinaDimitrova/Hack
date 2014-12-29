@@ -2,10 +2,10 @@ from random import randint, random, choice
 
 operators = {
     '^': lambda a, b: pow(a, b),
-    '*': lambda a, b: a*b,
-    '/': lambda a, b: a/b,
-    '+': lambda a, b: a+b,
-    '-': lambda a, b: a-b}
+    '*': lambda a, b: a * b,
+    '/': lambda a, b: a / b,
+    '+': lambda a, b: a + b,
+    '-': lambda a, b: a - b}
 
 
 def take_random_number():
@@ -31,29 +31,3 @@ def make_expression():
     expression = str(left) + " " + op + " " + str(right)
     result = expr_result(op, left, right)
     return expression, result
-
-
-
-def main():
-    counter = 1
-    name = input("Input your username: ")
-
-    while True:
-        expression, result = make_expression()
-        print("Question #{}".format(counter))
-        print("What is the answer to: {}".format(expression))
-        answer = float(input())
-        if answer == result:
-            print('Correct!')
-            counter += 1
-        else:
-            print('Incorrect! Ending game. Your score is: {}')
-            print(expression, result)
-            return False
-
-
-    print(expression, result)
-
-
-if __name__ == '__main__':
-    main()
